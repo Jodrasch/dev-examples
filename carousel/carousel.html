@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test carousel</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <style>
+    /* Je pense qu'il doit y avoir d'autres solutions plus propres pour
+    diminueur la taille des images ... */
+    #slider-nav img {
+      transform: scale(0.3);
+    }
+    </style>
+  </head>
+  <body>
+    <h1>slick carousel</h1>
+    <p>
+      Cette page montre comment utiliser le plugin
+      <a href="https://github.com/kenwheeler/slick">slick</a> pour
+      <a href="http://jquery.com/">jQuery</a> permettant de créer des carousels.
+    </p>
+    <p>
+      Notes :
+      <ul>
+        <li>Je ne suis pas l'auteur des images.</li>
+        <li>Il s'agit d'une exemple pour des étudiants.</li>
+      </ul>
+    </p>
+    <h2>Carousel simple</h2>
+    <div id="toto">
+      <img src="img/carice_van_houten.jpg" alt="">
+      <img src="img/emilia_clarke.jpg" alt="">
+      <img src="img/jason_momoa.jpg" alt="">
+      <img src="img/kit_harington.jpg" alt="">
+      <img src="img/lena_headey.jpg" alt="">
+      <img src="img/maisie_williams.jpg" alt="">
+      <img src="img/natalie_dormer.jpg" alt="">
+      <img src="img/nikolaj_coster_waldau.jpg" alt="">
+      <img src="img/peter_dinklage.jpg" alt="">
+      <img src="img/richard_madden.jpg" alt="">
+      <img src="img/rose_leslie.jpg" alt="">
+      <img src="img/sophie_turner.jpg" alt="">
+    </div>
+
+    <h2>Carousel un peu plus compliqué</h2>
+    <div id="slider-zoom">
+      <img src="img/carice_van_houten_l.jpg" alt="">
+      <img src="img/emilia_clarke_l.jpg" alt="">
+      <img src="img/jason_momoa_l.jpg" alt="">
+      <img src="img/kit_harington_l.jpg" alt="">
+      <img src="img/lena_headey_l.jpg" alt="">
+      <img src="img/maisie_williams_l.jpg" alt="">
+      <img src="img/natalie_dormer_l.jpg" alt="">
+      <img src="img/nikolaj_coster_waldau_l.jpg" alt="">
+      <img src="img/peter_dinklage_l.jpg" alt="">
+      <img src="img/richard_madden_l.jpg" alt="">
+      <img src="img/rose_leslie_l.jpg" alt="">
+      <img src="img/sophie_turner_l.jpg" alt="">
+    </div>
+    <div id="slider-thumbnails">
+      <img src="img/carice_van_houten.jpg" alt="">
+      <img src="img/emilia_clarke.jpg" alt="">
+      <img src="img/jason_momoa.jpg" alt="">
+      <img src="img/kit_harington.jpg" alt="">
+      <img src="img/lena_headey.jpg" alt="">
+      <img src="img/maisie_williams.jpg" alt="">
+      <img src="img/natalie_dormer.jpg" alt="">
+      <img src="img/nikolaj_coster_waldau.jpg" alt="">
+      <img src="img/peter_dinklage.jpg" alt="">
+      <img src="img/richard_madden.jpg" alt="">
+      <img src="img/rose_leslie.jpg" alt="">
+      <img src="img/sophie_turner.jpg" alt="">
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    // Les scripts devraient être dans des fichiers séparés
+    $('#toto').slick({
+      slidesToShow: 6,
+      slidesToScroll: 2,
+      dots: true,
+      speed: 500,
+    });
+
+    $('#slider-zoom').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      asNavFor: '#slider-thumbnails'
+    });
+
+    $('#slider-thumbnails').slick({
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      asNavFor: '#slider-zoom',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true
+    });
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Un simple menu</title>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <!--
+    C'est le menu principal. Chaque élément de la liste doit posséder
+    un data-menu qui est l'ID du div qui doit lorsqu'on clique dessus.
+    -->
+    <ul class="menu">
+      <li data-menu="menu1">Menu 1</li>
+      <li data-menu="menu2">Menu 2</li>
+    </ul>
+
+    <!--
+    L'id doit correspondre à l'attribut data-menu du menu. Lorsqu'on
+    clique sur le li qui a data-menu="menu1", ça va ouvrir l'élément
+    qui a un div correspondant, donc id="manu1".
+
+    A noter que les sous-menus doivent avoir la class submenu.
+    -->
+    <div id="menu1" class="submenu not-displayed">
+      <span><a href="https://www.google.ch">Google</a></span>
+      <span><a href="https://www.bing.ch">Bing</a></span>
+    </div>
+
+    <div id="menu2" class="submenu not-displayed">
+      <span><a href="https://www.amazon.com">Amazon</a></span>
+      <span><a href="http://www.aliexpress.com">Aliexpress</a></span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
