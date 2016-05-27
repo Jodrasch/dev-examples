@@ -9,7 +9,7 @@
 .not-displayed {
     display: none;
 }
-#menu {
+.menu {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -17,7 +17,7 @@
     -ms-user-select: none;
     user-select: none;
 }
-#menu li:hover {
+.menu li:hover {
     background-color: pink;
     cursor: pointer;
 }

@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   // On enregistre un événement qui sera exécuté lorsqu'on clique sur
   // un li qui est dans un #menu.
-  $('#menu li').click(function (evt) {
+  $('.menu li').click(function (evt) {
 
     // menuId contient la valeur de l'attribut data-menu
     // du menu qui vient d'être cliqué.
