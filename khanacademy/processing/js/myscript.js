@@ -79,7 +79,6 @@ $(document).ready(function() {
                 points.forEach(function(currentPoint) {
                     ellipse(currentPoint.x, currentPoint.y, 10, 10);
 
-                    // Dessine les connexions
                     /*
                     currentPoint.connectedTo.forEach(function(connectionIndex) {
                         line(points[connectionIndex].x,
