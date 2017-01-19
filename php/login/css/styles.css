@@ -19,6 +19,15 @@ body {
   box-shadow: 2px 10px 2px 2px;
 }
 
+header a {
+  padding: 0.5rem 1rem;
+}
+
+header a:hover {
+  background-color: #729CCC;
+  color: white;
+}
+
 #login div {
   box-sizing: content-box;
   margin: 20px 0;

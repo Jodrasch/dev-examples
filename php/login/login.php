@@ -11,7 +11,7 @@
       <a href="index.html">Home</a>
     </header>
     <h1>Login</h1>
-    <form id="login" action="#">
+    <form id="login" action="login.php">
       <div>
         <label for="username">Username: </label><!-- to remove space
         --><input type="text" id="username">

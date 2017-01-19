@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <a href="index.html">Home</a>
+    <header>
+      <a href="index.html">Home</a>
+    </header>
     <h1>Admin</h1>
     <p>
       Vous ne devriez pas accéder à cette page si vous ne vous êtes pas
