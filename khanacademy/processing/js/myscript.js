@@ -37,7 +37,10 @@ $(document).ready(function() {
 
         with (processing) {
 
+            //
             // ECRIVEZ VOTRE PROGRAMME ICI
+            //
+
             var NB_POINTS = 20;
 
             // Rayon et diamètre des points
@@ -78,15 +81,6 @@ $(document).ready(function() {
 
                 points.forEach(function(currentPoint) {
                     ellipse(currentPoint.x, currentPoint.y, 10, 10);
-
-                    // Dessine les connexions
-                    /*
-                    currentPoint.connectedTo.forEach(function(connectionIndex) {
-                        line(points[connectionIndex].x,
-                             points[connectionIndex].y,
-                             currentPoint.x, currentPoint.y);
-                    });
-                    */
 
                     currentPoint.x += currentPoint.depX;
                     currentPoint.y += currentPoint.depY;
