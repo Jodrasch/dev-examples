@@ -10,8 +10,8 @@
     <header>
       <a href="index.html">Home</a>
     </header>
-    <h1>Connexion</h1>
-    <form id="login" action="login.php">
+    <h1>Sign up</h1>
+    <form id="login" action="register.php">
       <div>
         <label for="emaile">Email: </label><!-- to remove space
         --><input type="email" id="email">
@@ -21,11 +21,8 @@
         --><input type="password" id="password">
       </div>
       <div>
-        <input type="submit" value="Connexion">
+        <input type="submit" value="Enregistrement">
       </div>
     </form>
-    <div>
-      Pas de compte ? Vous pouvez vous <a href="register.php">enregistrer</a>.
-    </div>
   </body>
 </html>

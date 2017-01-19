@@ -10,7 +10,7 @@
     <header>
       <a href="index.html">Home</a>
     </header>
-    <h1>Admin</h1>
+    <h1>Zone protégée</h1>
     <p>
       Vous ne devriez pas accéder à cette page si vous ne vous êtes pas
       authentifié.

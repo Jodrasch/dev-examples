@@ -49,6 +49,8 @@ header a:hover {
   margin: 0;
   padding: 5px;
 }
-#login input[type=submit] {
-  float: right;
+
+#login div:last-of-type {
+  display: flex;
+  flex-direction: row-reverse;;
 }
