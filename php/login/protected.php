@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+session_start();
+
+$logged = !empty($_SESSION);
+
+if (!$logged) {
+  header('Location: login.php');
+}
+
+?><!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -11,6 +20,9 @@
       <a href="index.html">Home</a>
     </header>
     <h1>Zone protégée</h1>
+    <p>
+      Bienvenue <?= $_SESSION['email'] ?> | <a href="signout.php">Déconnexion</a>
+    </p>
     <p>
       Vous ne devriez pas accéder à cette page si vous ne vous êtes pas
       authentifié.
